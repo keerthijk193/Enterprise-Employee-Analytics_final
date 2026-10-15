@@ -5,7 +5,7 @@
 #                         current_user, page_setup, show_error)
 
 # user = current_user()
-# page_setup("Enterprise Employee Analytics", "ðŸ¢")
+# page_setup("Enterprise Employee Analytics", "Ã°Å¸ÂÂ¢")
 
 # # --- employees only get a welcome message --------------------------------------------
 # if user["role"] == "Employee":
@@ -67,7 +67,7 @@ from ui_helpers import (AnalyticsManager, DatabaseError, EmployeeManager,
                         current_user, page_setup, show_error)
 
 user = current_user()
-page_setup("Enterprise Employee Analytics", "ðŸ¢")
+page_setup("Enterprise Employee Analytics", ":material/home:")
 
 # --- employees only get a welcome message --------------------------------------------
 if user["role"] == "Employee":
@@ -123,3 +123,4 @@ GUIDE = {
 }
 rows = [f"| {name} | {GUIDE[name]} |" for name in PAGE_ACCESS[user["role"]] if name in GUIDE]
 st.markdown("**Use the sidebar to navigate**\n\n| Page | What it does |\n|---|---|\n" + "\n".join(rows))
+

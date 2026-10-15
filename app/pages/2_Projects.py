@@ -7,7 +7,7 @@
 # from ui_helpers import (DatabaseError, ProjectManager, clear_dashboard_cache,
 #                         page_setup, safe_lookup_options, show_error)
 
-# page_setup("Projects", "ðŸ“")
+# page_setup("Projects", "Ã°Å¸â€œÂ")
 # manager = ProjectManager()
 # departments, _, _ = safe_lookup_options()
 
@@ -82,7 +82,7 @@ from entities import PROJECT_STATUS, Project
 from ui_helpers import (DatabaseError, EmployeeManager, ProjectManager, clear_dashboard_cache,
                         page_setup, safe_lookup_options, show_error)
 
-page_setup("Projects", "ðŸ“")
+page_setup("Projects", ":material/folder:")
 manager = ProjectManager()
 departments, _, _ = safe_lookup_options()
 
@@ -161,3 +161,5 @@ with tab_list:
             st.dataframe(pd.DataFrame(team), width="stretch", hide_index=True)
     except DatabaseError as exc:
         show_error(exc)
+
+

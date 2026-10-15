@@ -1,4 +1,4 @@
-# """Login page (shown only while nobody is signed in)."""
+﻿# """Login page (shown only while nobody is signed in)."""
 # import streamlit as st
 
 # from auth import AuthManager
@@ -6,7 +6,7 @@
 
 # left, mid, right = st.columns([1, 2, 1])
 # with mid:
-#     st.title("ðŸ¢ Enterprise Employee Analytics")
+#     st.title("Ã°Å¸ÂÂ¢ Enterprise Employee Analytics")
 #     st.subheader("Sign in")
 #     with st.form("login_form"):
 #         email = st.text_input("Email")
@@ -46,7 +46,7 @@ from db_manager import DatabaseError, get_setting
 
 left, mid, right = st.columns([1, 2, 1])
 with mid:
-    st.title("ðŸ¢ Enterprise Employee Analytics")
+    st.title("🏢 Enterprise Employee Analytics")
     st.subheader("Sign in")
     with st.form("login_form"):
         email = st.text_input("Email")
@@ -65,7 +65,7 @@ with mid:
                 st.session_state["user"] = user
                 st.rerun()
 
-    st.page_link("signup.py", label="New employee? Create an account", icon="ðŸ“")
+    st.page_link("signup.py", label="New employee? Create an account", icon=":material/person_add:")
 
     # Set SHOW_DEMO_LOGINS = "0" in .env / Streamlit secrets to hide this box on a public deployment.
     if get_setting("SHOW_DEMO_LOGINS", "1") == "1":
@@ -80,3 +80,5 @@ with mid:
 | `employee2@company.com` | Employee | Own profile only (employee #2) |
 """
             )
+
+

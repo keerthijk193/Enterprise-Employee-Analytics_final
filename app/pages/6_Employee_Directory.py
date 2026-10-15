@@ -5,7 +5,7 @@ from ui_helpers import (DatabaseError, EmployeeManager, page_setup, require_role
                         safe_lookup_options, show_error)
 
 require_roles("Manager", "HR")          # read-only, basic details only
-page_setup("Employee Directory", "ðŸ“‡")
+page_setup("Employee Directory", ":material/contacts:")
 st.caption("Find an employee's ID before assigning them to a project. "
            "Onboarding and employee changes are handled by HR.")
 
@@ -40,3 +40,5 @@ labels = {f"{r['first_name']} {r['last_name']} (ID {r['employee_number']})": r["
           for r in rows}
 pick = st.selectbox("Copy an employee ID", list(labels))
 st.code(str(labels[pick]), language=None)
+
+

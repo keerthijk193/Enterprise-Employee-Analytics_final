@@ -1,10 +1,10 @@
-# import pandas as pd
+﻿# import pandas as pd
 # import streamlit as st
 
 # from ui_helpers import (DatabaseError, EmployeeManager, ProjectManager, ReviewManager,
 #                         current_user, page_setup, show_error)
 
-# page_setup("My Profile", "ðŸ™‹")
+# page_setup("My Profile", ":material/account_circle:")
 # user = current_user()
 # number = user.get("employee_number")      # taken from the login, never typed in -> own data only
 
@@ -75,7 +75,7 @@
 # from ui_helpers import (DatabaseError, EmployeeManager, ProjectManager, ReviewManager,
 #                         current_user, page_setup, show_error)
 
-# page_setup("My Profile", "ðŸ™‹")
+# page_setup("My Profile", ":material/account_circle:")
 # user = current_user()
 # number = user.get("employee_number")      # taken from the login, never typed in -> own data only
 
@@ -173,7 +173,7 @@ DETAIL_FIELDS = [
     ("Work-life balance", "work_life_balance"), ("Attrition", "attrition"),
 ]
 
-page_setup("My Profile", "ðŸ™‹")
+page_setup("My Profile", ":material/account_circle:")
 user = current_user()
 
 # WHO is this? Decided from the signed-in account in the database - never from the URL or a form,
@@ -250,3 +250,5 @@ with tab_hist:
             st.info("No history recorded.")
     except DatabaseError as exc:
         show_error(exc)
+
+

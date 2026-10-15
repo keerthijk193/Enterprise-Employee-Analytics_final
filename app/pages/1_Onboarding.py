@@ -5,7 +5,7 @@
 # from ui_helpers import (DatabaseError, EmployeeManager, clear_dashboard_cache,
 #                         page_setup, safe_lookup_options, show_error)
 
-# page_setup("Employees", "ðŸ‘¤")
+# page_setup("Employees", "Ã°Å¸â€˜Â¤")
 # manager = EmployeeManager()
 # departments, job_roles, edu_fields = safe_lookup_options()
 
@@ -123,7 +123,7 @@
 # from ui_helpers import (DatabaseError, EmployeeManager, clear_dashboard_cache,
 #                         page_setup, safe_lookup_options, show_error)
 
-# page_setup("Employees", "ðŸ‘¤")
+# page_setup("Employees", "Ã°Å¸â€˜Â¤")
 # manager = EmployeeManager()
 # departments, job_roles, edu_fields = safe_lookup_options()
 
@@ -245,7 +245,7 @@ from ui_helpers import (DatabaseError, EmployeeManager, clear_dashboard_cache,
                         page_setup, require_roles, safe_lookup_options, show_error)
 
 require_roles("HR")     # onboarding / employee updates are HR-only
-page_setup("Employees", "ðŸ‘¤")
+page_setup("Employees", ":material/badge:")
 manager = EmployeeManager()
 departments, job_roles, edu_fields = safe_lookup_options()
 
